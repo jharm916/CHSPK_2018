@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Chesapeak</title>
+		
+		<link rel="stylesheet" type="text/css" href="http://chesapeakmusic.com/jquery.fullpage.css" />
+		<link rel=icon href="http://chesapeakmusic.com/media/LOGO.webp"> <!--flavicon-->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+		<!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
+		<!--<script src="jquery.easings.min.js"></script>-->
+
+		<!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
+		<script type="text/javascript" src="http://chesapeakmusic.com/vendors/scrolloverflow.min.js"></script>
+		<script type="text/javascript" src="http://chesapeakmusic.com/jquery.fullpage.js"></script>
+		
+		<!--jSound stuff-->
+		<script type="text/javascript" src="jsound.min.js"></script>
+		<link rel="stylesheet" href="jsound.min.css" type="text/css" media="all">
+		<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+		<style>
+			body { font-family: 'Montserrat'; padding: 10px; }
+			.jSound { margin: 0 auto 20px; max-width: 768px; }
+			
+			#landingSection {
+				text-align: center;
+				font-family: 'Indie Flower', cursive;
+				color:white;
+				
+				background: url("http://chesapeakmusic.com/media/flyer_2.jpg");
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+			}
+			
+			#musicSection {
+				text-align: center;
+				font-family: 'Indie Flower', cursive;
+				color:white;
+				
+				background: url("http://chesapeakmusic.com/media/2.png");
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+			}
+			
+			#videoSection {
+				text-align: center;
+				font-family: 'Indie Flower', cursive;
+				color:white;
+				
+				background: url("http://chesapeakmusic.com/media/4_5.png");
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+			}
+			
+		</style>
+		
+		<script>
+			$(document).ready(function() {
+				$('#fullpage').fullpage({
+					//Navigation
+				menu: '#menu',
+				lockAnchors: false,
+				anchors:['landing', 'music', 'videos', 'announcements'],
+				navigation: false,
+				navigationPosition: 'right',
+				navigationTooltips: ['firstSlide', 'secondSlide'],
+				showActiveTooltip: false,
+				slidesNavigation: false,
+				slidesNavPosition: 'bottom',
+
+				//Scrolling
+				css3: true,
+				scrollingSpeed: 600,
+				autoScrolling: true,
+				fitToSection: true,
+				fitToSectionDelay: 1000,
+				scrollBar: false,
+				easing: 'easeInOutCubic',
+				easingcss3: 'ease',
+				loopBottom: false,
+				loopTop: false,
+				loopHorizontal: true,
+				continuousVertical: false,
+				continuousHorizontal: true,
+				scrollHorizontally: false,
+				interlockedSlides: false,
+				dragAndMove: false,
+				offsetSections: false,
+				resetSliders: false,
+				fadingEffect: false,
+				normalScrollElements: '#element1, .element2',
+				scrollOverflow: true,
+				scrollOverflowReset: false,
+				scrollOverflowOptions: null,
+				touchSensitivity: 15,
+				normalScrollElementTouchThreshold: 5,
+				bigSectionsDestination: null,
+
+				//Accessibility
+				keyboardScrolling: true,
+				animateAnchor: true,
+				recordHistory: true,
+
+				//Design
+				controlArrows: true,
+				verticalCentered: false,
+				paddingTop: '25px',
+				paddingBottom: '10px',
+				fixedElements: '#header, .footer',
+				responsiveWidth: 0,
+				responsiveHeight: 0,
+				responsiveSlides: false,
+				parallax: false,
+				parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
+
+				//Custom selectors
+				sectionSelector: '.section',
+				slideSelector: '.slide',
+
+				lazyLoading: true,
+
+				//events
+				onLeave: function(index, nextIndex, direction){},
+				afterLoad: function(anchorLink, index){},
+				afterRender: function(){},
+				afterResize: function(){},
+				afterResponsive: function(isResponsive){},
+				afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
+				onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
+				});
+				
+				/*
+				$.ajax({
+					type: "POST",
+					url: "fetch_songs.php"
+				}).done(function(msg) { 
+					
+					alert(msg);
+					$result = JSON.parse(msg);
+					for (i = 0; i < $result.length; i++)
+					{
+						$(".inner").append($result[i] + "onmouseover='bigImg(this)' onmouseout='normalImg(this)' />");
+						$(".inner").append("<br/><br/>");
+					}
+					
+				});
+				*/
+				
+			});
+		</script>
+		
+	</head>
+	<body>
+		
+		<div id="fullpage">
+			<div class="section" id="landingSection">
+				<h1 style="font-size: 25px;">Show Announcement!</h1>
+				<p>
+					<a style="text-decoration:none; color: #36A0DE; font-size: 28px;" href="http://www.ticketfly.com/event/1498858-porter-bay-baltimore/">Tickets</a> <br/>
+					<a style="text-decoration:none; color: #36A0DE; font-size: 28px;" href="http://www.ticketfly.com/event/1498858-porter-bay-baltimore/">Tickets</a> <br/>
+					<a style="text-decoration:none; color: #36A0DE; font-size: 28px;" href="http://www.ticketfly.com/event/1498858-porter-bay-baltimore/">Tickets</a> <br/>
+					<a style="text-decoration:none; color: #36A0DE; font-size: 28px;" href="http://www.ticketfly.com/event/1498858-porter-bay-baltimore/">Tickets</a> <br/>
+					<a style="text-decoration:none; color: #36A0DE; font-size: 28px;" href="http://www.ticketfly.com/event/1498858-porter-bay-baltimore/">Tickets</a> <br/>
+					<a style="text-decoration:none; color: #36A0DE; font-size: 28px;" href="http://www.ticketfly.com/event/1498858-porter-bay-baltimore/">Tickets</a> <br/>
+					<a style="text-decoration:none; color: #36A0DE; font-size: 28px;" href="http://www.ticketfly.com/event/1498858-porter-bay-baltimore/">Tickets</a> <br/>
+					<a style="text-decoration:none; color: #36A0DE; font-size: 28px;" href="http://www.ticketfly.com/event/1498858-porter-bay-baltimore/">Tickets</a> <br/>
+					<a style="text-decoration:none; color: #36A0DE; font-size: 28px;" href="http://www.ticketfly.com/event/1498858-porter-bay-baltimore/">Tickets</a> <br/>
+					<a style="text-decoration:none; color: #36A0DE; font-size: 28px;" href="http://www.ticketfly.com/event/1498858-porter-bay-baltimore/">Tickets</a> <br/>
+					<a style="text-decoration:none; color: #36A0DE; font-size: 28px;" href="http://www.ticketfly.com/event/1498858-porter-bay-baltimore/">Tickets</a> <br/>
+					<a style="text-decoration:none; color: #36A0DE; font-size: 28px;" href="http://www.ticketfly.com/event/1498858-porter-bay-baltimore/">Tickets</a> <br/>
+					<a style="text-decoration:none; color: #36A0DE; font-size: 28px;" href="http://www.ticketfly.com/event/1498858-porter-bay-baltimore/">Tickets</a> <br/>
+					<a style="text-decoration:none; color: #36A0DE; font-size: 28px;" href="http://www.ticketfly.com/event/1498858-porter-bay-baltimore/">Tickets</a> <br/>
+					<a style="text-decoration:none; color: #36A0DE; font-size: 28px;" href="http://www.ticketfly.com/event/1498858-porter-bay-baltimore/">Tickets</a> <br/>
+					<a style="text-decoration:none; color: #36A0DE; font-size: 28px;" href="http://www.ticketfly.com/event/1498858-porter-bay-baltimore/">Tickets</a> <br/>
+					<a style="text-decoration:none; color: #36A0DE; font-size: 28px;" href="http://www.ticketfly.com/event/1498858-porter-bay-baltimore/">Tickets</a> <br/>
+					<a style="text-decoration:none; color: #36A0DE; font-size: 28px;" href="http://www.ticketfly.com/event/1498858-porter-bay-baltimore/">Tickets</a> <br/>
+					<a style="text-decoration:none; color: #36A0DE; font-size: 28px;" href="http://www.ticketfly.com/event/1498858-porter-bay-baltimore/">Tickets</a> <br/>
+					<a style="text-decoration:none; color: #36A0DE; font-size: 28px;" href="http://www.ticketfly.com/event/1498858-porter-bay-baltimore/">Tickets</a> <br/>
+					<a style="text-decoration:none; color: #36A0DE; font-size: 28px;" href="http://www.ticketfly.com/event/1498858-porter-bay-baltimore/">Tickets</a> <br/>
+					<a style="text-decoration:none; color: #36A0DE; font-size: 28px;" href="http://www.ticketfly.com/event/1498858-porter-bay-baltimore/">Tickets</a> <br/>
+					<a style="text-decoration:none; color: #36A0DE; font-size: 28px;" href="http://www.ticketfly.com/event/1498858-porter-bay-baltimore/">Tickets</a> <br/>
+					<a style="text-decoration:none; color: #36A0DE; font-size: 28px;" href="http://www.ticketfly.com/event/1498858-porter-bay-baltimore/">Tickets</a> <br/>
+					<!--
+					<img border="0" alt="Follow us on Twitter!" style="width:550px;height:700px;" src="http://chesapeakmusic.com/media/flyer.jpg" onload="this.width=social_image_size; this.height=social_image_size;" />
+					-->
+				</p>
+			</div>
+		
+			<div class="section" id='musicSection'>
+				<div class="slide">
+					<h1 style="font-size: 25px;">Porter Bay</h1>
+					<iframe class="jsound-1" width="90%" height="450" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/325420046&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+					<iframe class="jsound-2" width="90%" height="450" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/319008489&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+					<iframe class="jsound-3" width="90%" height="450"  frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/319614121&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+																													
+					<script type="text/javascript">
+						$('.jsound-1').jSound({
+							mini: true
+						});
+						$('.jsound-2').jSound({
+							theme: 'dark'
+						});
+						$('.jsound-3').jSound({
+							mini: true
+						});
+					</script>
+				</div>
+				<div class="slide">
+					<h1 style="font-size: 25px;">Vinci</h1>
+					<iframe class="jsound-4" width="90%" height="300" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/327628127&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+					<iframe class="jsound-5" width="90%" height="300" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/326076461&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+					<iframe class="jsound-6" width="90%" height="300" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/324524130&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+					
+					<script type="text/javascript">
+						$('.jsound-4').jSound({
+							mini: true
+						});
+						$('.jsound-5').jSound({
+							theme: 'dark'
+						});
+						$('.jsound-6').jSound({
+							mini: true
+						});
+					</script>
+				</div>
+				<div class="slide">
+					<h1 style="font-size: 25px;">Ezra</h1>
+					<iframe class="jsound-7" width="90%" height="300" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/326439435&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+					<iframe class="jsound-8" width="90%" height="300" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/324284176&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+					<iframe class="jsound-9" width="90%" height="300" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/313935454&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+					
+					<script type="text/javascript">
+						$('.jsound-7').jSound({
+							mini: true
+						});
+						$('.jsound-8').jSound({
+							theme: 'dark'
+						});
+						$('.jsound-9').jSound({
+							mini: true
+						});
+					</script>
+				</div>
+			</div>
+			
+			<div class="section" id="videoSection">
+				<div class="slide">
+					<h1 style="font-size: 25px;">Videos</h1>
+					<iframe width="75%" height="65%" src="https://www.youtube.com/embed/s13cK1oBjeE" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<div class="slide">
+					<h1 style="font-size: 25px;">Videos</h1>
+					<iframe width="75%" height="65%" src="https://www.youtube.com/embed/Esoz_zG_Q2Y" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<div class="slide">
+					<h1 style="font-size: 25px;">Videos</h1>
+					<iframe width="75%" height="65%" src="https://www.youtube.com/embed/LJKBCwy7Gds" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+			
+		</div>
+		
+	</body>
+</html>
