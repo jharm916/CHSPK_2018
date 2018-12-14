@@ -1,0 +1,47 @@
+@import url(font-awesome.min.css);
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
+
+
+
+.pagetwo {
+	background: #000000;
+	opacity: 0.75;
+	border: solid 2px;
+	border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+}
+
+.pagethree {
+	background: #000000;
+	opacity: 0.5;
+	border: solid 2px;
+	border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+	
+}
+
+.pagefour {
+	background: #000000;
+	opacity: 0.5;
+	border: solid 2px;
+	border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+	
+}
+
+
