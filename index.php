@@ -234,7 +234,7 @@
 							</ul>                          
 							-->
 							<ul>
-								<li style="background-color:#; font-weight: bold;"><a href="#CHSPK">CHSPK</a></li>
+								<li style="background-color: #3F81A5; font-weight: bold;"><a href="#CHSPK">CHSPK</a></li>
 								<li style="background-color:#; font-weight: bold;"><a href="#drinkmorewater">Drink More Water</a></li>
 								<li style="background-color:#; font-weight: bold;"><a href="#contact">Contact</a></li>
 								<li style="background-color:; font-weight: bold;"><a href="#latest">Latest Release</a></li>
@@ -248,7 +248,9 @@
 						<!-- CHSPK -->
 						<article id="CHSPK">
 							<h2 class="major">Chesapeak Music</h2>
-							<img src="images/IMG_6075.JPG" alt="www.chesapeakmusic.com" height="409" width="273"> <!--orig=2730 x 4096-->
+							<ul>
+								<li> <img src="images/chspk_popout/DSC2.JPG" alt="www.chesapeakmusic.com" style="max-width:100%;max-height:100%;"> </li> <!--orig=2730 x 4096-->
+							</ul>
 						</article>
 
 						<!-- Drink More Water -->
