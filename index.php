@@ -246,10 +246,17 @@
 					<div id="main">
 
 						<!-- CHSPK -->
-						<article id="CHSPK">
+						<article id="CHSPK"> <!--overflow, overflow-x, or overflow-y and each can be set to any of visible, hidden, scroll, auto, or inherit.-->
 							<h2 class="major">Chesapeak Music</h2>
-							<ul>
-								<li> <img src="images/chspk_popout/DSC2.JPG" alt="www.chesapeakmusic.com" style="max-width:100%;max-height:100%;"> </li> <!--orig=2730 x 4096-->
+							<ul style="overflow: scroll; overflow-x: scroll; overflow-y: scroll;">
+								<!-- print list item for each image in a folder -->
+								<?php
+								$files = glob("images/chspk_popout/*.*");
+								for ($i = 0; $i < count($files); $i++) {
+									$image = $files[$i];
+									echo '<li><img src="images/chspk_popout/' . basename($image) . '" alt="www.chesapeakmusic.com" style="max-width:100%;max-height:100%;"></li>';			
+								}
+								?>
 							</ul>
 						</article>
 
