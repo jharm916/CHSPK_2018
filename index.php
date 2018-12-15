@@ -169,6 +169,7 @@
 	}
 	
 	</style>
+	
 	<!--[if IE]>
 		<script type="text/javascript">
 			 var console = { log: function() {} };
@@ -221,6 +222,7 @@
 							</div>
 						</div>
 						<nav>
+							<!--
                             <ul>
 								<li style="background-color:#0088ff; font-weight: bold;">
 								    <a href="https://www.paypal.me/chspktix" target="_blank">
@@ -229,7 +231,8 @@
 								        &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 								    </a>
 								</li>
-							</ul>                            
+							</ul>                          
+							-->
 							<ul>
 								<li style="background-color:#; font-weight: bold;"><a href="#CHSPK">CHSPK</a></li>
 								<li style="background-color:#; font-weight: bold;"><a href="#drinkmorewater">Drink More Water</a></li>
@@ -276,7 +279,7 @@
 						<!-- Contact -->
 						<article id="contact">
 							<h2 class="major">Contact</h2>
-							<form action="sendcontactform.php" method="post">
+							<form> <!--action="sendcontactform.php" method="post">-->
 								<div class="fields">
 									<div class="field half">
 										<label for="name">Name</label> <input id="name" name="name" type="text">
@@ -289,11 +292,12 @@
 										<textarea id="message" name="message" rows="4"></textarea>
 									</div>
 								</div>
-								<ul class="actions">
-									<li><input class="primary" type="submit" value="Submit"></li>
-									<!--
-									<li><input type="reset" value="Reset"></li>
-									-->
+								<ul> <!--class="actions">-->
+									<li><button style="background-color: #3F81A5;" onclick="showContactEmail()">Submit</button>
+								</ul>
+								<ul id="contactEmail" style="display: none;">
+									<li/>
+									<li><p>Unable to send, please email inquiries to chesapeakmusic@gmail.com</p></li>
 								</ul>
 							</form>
 						</article>
@@ -490,6 +494,15 @@
 				});
 			});
 		}); // */
+		
+		<!--Display contact email-->
+		function showContactEmail() {
+			var x = document.getElementById("contactEmail");
+			if (x.style.display === "none") {
+				x.style.display = "block";
+			}
+		}
+		
 		</script>
 
 
