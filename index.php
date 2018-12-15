@@ -292,14 +292,17 @@
 										<textarea id="message" name="message" rows="4"></textarea>
 									</div>
 								</div>
-								<ul> <!--class="actions">-->
-									<li><button style="background-color: #3F81A5;" onclick="showContactEmail()">Submit</button>
-								</ul>
-								<ul id="contactEmail" style="display: none;">
-									<li/>
-									<li><p>Unable to send, please email inquiries to chesapeakmusic@gmail.com</p></li>
-								</ul>
+								
 							</form>
+							
+							<ul> <!--class="actions">-->
+								<li><button style="background-color: #3F81A5;" onclick="showContactEmail()">Submit</button>
+							</ul>
+							<ul id="contactEmail" style="display: none;">
+								<li/>
+								<li><p>Please email inquiries to chesapeakmusic@gmail.com. Thank you!</p></li>
+							</ul>
+							
 						</article>
 
 						<!-- Music -->
