@@ -235,9 +235,9 @@
 							-->
 							<ul>
 								<li style="background-color: #3F81A5; font-weight: bold;"><a href="#CHSPK">CHSPK</a></li>
-								<li style="background-color:#; font-weight: bold;"><a href="#drinkmorewater">Drink More Water</a></li>
-								<li style="background-color:#; font-weight: bold;"><a href="#contact">Contact</a></li>
-								<li style="background-color:; font-weight: bold;"><a href="#latest">Latest Release</a></li>
+								<li style="background-color: #3F81A5; font-weight: bold;"><a href="#drinkmorewater">Drink More Water</a></li>
+								<li style="background-color: #3F81A5; font-weight: bold;"><a href="#contact">Contact</a></li>
+								<li style="background-color: #3F81A5; font-weight: bold;"><a href="#latest">Latest Release</a></li>
 							</ul>
 						</nav>
 					</header>
