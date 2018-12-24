@@ -493,6 +493,18 @@
 				$('#foreground').click(function() {
 					$('#info').animate({ marginLeft: "-150px" }, 700);
 				});
+				
+				$('#fullpage').fullpage({
+					sectionsColor: ['yellow', 'orange', '#C0C0C0', '#ADD8E6'],
+					scrollOverflow: true
+				});
+				$('#CHSPK').slimScroll({
+					alwaysVisible: true,
+					color: 'black',
+					size: '10px',
+					allowPageScroll: true,
+				});
+				
 			});
 		}); // */
 		
