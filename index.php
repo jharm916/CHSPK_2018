@@ -46,7 +46,6 @@
 		overflow: hidden;
 	}
 
-	
 	#section0 .layer{
 		position: absolute;
 		z-index: 4;
@@ -237,7 +236,7 @@
 						<!-- CHSPK -->
 						<article id="CHSPK"> <!--overflow, overflow-x, or overflow-y and each can be set to any of visible, hidden, scroll, auto, or inherit.-->
 							<h2 class="major">Chesapeak Music</h2>
-							<ul style="overflow: scroll; overflow-x: scroll; overflow-y: scroll;">
+							<ul> <!-- style="overflow: scroll; overflow-x: scroll; overflow-y: scroll;"-->
 								<!-- print list item for each image in a folder -->
 								<?php
 								$files = glob("images/chspk_popout/*.*");
@@ -498,6 +497,7 @@
 					sectionsColor: ['yellow', 'orange', '#C0C0C0', '#ADD8E6'],
 					scrollOverflow: true
 				});
+				
 				$('#CHSPK').slimScroll({
 					alwaysVisible: true,
 					color: 'black',
