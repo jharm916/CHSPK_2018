@@ -7,7 +7,7 @@
 		<meta charset="UTF-8">
 		<meta name="description" content="Chesapeak Music | Inspiration | Good Music | Lifestyle | chspk | collaborate & support | DMV">
 		<meta name="keywords" content="CHSPK,chesapeak,bayhouse,chesapeake,music,rap,rapping,rappers,hiphop,hip-hop, Baltimore,Maryland,dc,productions,produce,producer,city,urban,appeal,clothing,style,art,artists,shirt,shirts, photography,dmv,eskettit,rich,cash,money,recording,md,flow,sale,business,enterprise,fresh,shots,flicks,flick,video,videos,recording,coast,savethebay,save,the,bay,promotion,promotional,squad,content,knowledge,mass,appeal,restoration,restore,water,ocean,clean,recycle,energy,renewable,resources,resource,source,out, restorative,newage,positive,vibes,new-age, revolutionary,ideas,higher,level,concept, capture,milleneal,generation,jam,inspire,raw,energy,emotion,depth,lyricism,lyrics,hard,go,smooth,dope,
-	Chesapeak,East,Coast,hiphop,hip,hop,music,PorterBay,porter,bay,rap,art,vinci,scrolling,twitter">
+			Chesapeak,East,Coast,hiphop,hip,hop,music,PorterBay,porter,bay,rap,art,vinci,scrolling,twitter">
 
 		<meta name="Resource-type" content="Document" />
 		<link rel="stylesheet" type="text/css" href="dist/fullpage.css" />
