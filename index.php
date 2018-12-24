@@ -104,10 +104,10 @@
 		transform: translate3d(0,0,0);
 		background-repeat: no-repeat;
 		 no-repeat fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
 
 	}
 
@@ -222,17 +222,6 @@
 							</div>
 						</div>
 						<nav>
-							<!--
-                            <ul>
-								<li style="background-color:#0088ff; font-weight: bold;">
-								    <a href="https://www.paypal.me/chspktix" target="_blank">
-								        &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-								        BUY TICKETS TO DRINK MORE WATER SHOW
-								        &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-								    </a>
-								</li>
-							</ul>                          
-							-->
 							<ul>
 								<li style="background-color: #3F81A5; font-weight: bold;"><a href="#CHSPK">CHSPK</a></li>
 								<li style="background-color: #3F81A5; font-weight: bold;"><a href="#drinkmorewater">Drink More Water</a></li>
