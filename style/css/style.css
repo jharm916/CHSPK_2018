@@ -27,21 +27,8 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
-body {
-	line-height: 1;
-}
-
 ol, ul {
 	list-style: none;
-}
-
-body {
-	-webkit-text-size-adjust: none;
-}
-
-mark {
-	background-color: transparent;
-	color: inherit;
 }
 
 input::-moz-focus-inner {
@@ -80,6 +67,8 @@ input, select, textarea {
 
 	body {
 		background: #1b1f22;
+		line-height: 1;
+	      -webkit-text-size-adjust: none;
 	}
 
 	body.is-preload *, body.is-preload *:before, body.is-preload *:after {
