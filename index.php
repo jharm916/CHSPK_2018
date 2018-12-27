@@ -383,6 +383,7 @@
 		</div>
 		-->
 		
+		<!--
 		<div class="section" id="section3">
 			<div class="slide" id="slide1">
 				<center><h1>CHSPK GALLERY</h1></center>
@@ -392,6 +393,7 @@
 			<div class="slide" id="slide4"></div>
 			<div class="slide" id="slide5"></div>
 		</div>
+		--> 
 		
 	</div>
 
