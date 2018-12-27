@@ -23,8 +23,6 @@
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<style>
 
-	* --------------------------------------- */
-
 	h1{
 		font-size: 5em;
 		font-family: arial,helvetica;
@@ -412,10 +410,10 @@
 		</script> 
 		<script src="style/js/preloadjs-0.6.2.min.js">
 		</script> 
-		<script type="text/javascript" src="style/js/examples.js">
-		</script> 	
+		<!--
 		<script type="text/javascript" src="dist/fullpage.js">
 		</script>
+		--> 
 
 		<script type="text/javascript">
 			var myFullpage = new fullpage('#fullpage', {
@@ -472,15 +470,11 @@
 						$('#info').animate({ marginLeft: "-150px" }, 700);
 					});
 					
-					$('#fullpage').fullpage({
-						sectionsColor: ['yellow', 'orange', '#C0C0C0', '#ADD8E6'],
+					$('#fullpage').fullpage( {
 						scrollOverflow: true
 					});
 					
-					$('#CHSPK').slimScroll({
-						alwaysVisible: true,
-						color: 'black',
-						size: '10px',
+					$('#main').slimScroll( {
 						allowPageScroll: true,
 					});
 					
