@@ -32,5 +32,8 @@
     "test",
     "tests",
     "examples"
-  ]
+  ],
+  "dependencies": {
+    "lightgallery": "^1.6.11"
+  }
 }

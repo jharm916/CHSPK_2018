@@ -14,6 +14,7 @@
 		<link href="style/css/style.css" rel="stylesheet">
 		<link href="style/css/additions.css" rel="stylesheet">
 		<link href="style/css/parallax.css" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="style/css/lightgallery.css" /> 
 		<link rel="canonical" href="http://chesapeakmusic.com/index">
 		<link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
 		<link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
@@ -212,10 +213,12 @@
 							</div>
 							<nav>
 								<ul>
-									<li style="background-color: #3F81A5; font-weight: bold;"><a href="#CHSPK">CHSPK</a></li>
-									<li style="background-color: #3F81A5; font-weight: bold;"><a href="#drinkmorewater">Drink More Water</a></li>
+									<li style="background-color: #3F81A5; font-weight: bold;"><a href="#drinkmorewater">ORDER</a></li>
+									<li style="background-color: #3F81A5; font-weight: bold;"><a href="#CHSPK">FLICKS</a></li>
+									<!--
 									<li style="background-color: #3F81A5; font-weight: bold;"><a href="#contact">Contact</a></li>
-									<li style="background-color: #3F81A5; font-weight: bold;"><a href="#latest">Latest Release</a></li>
+									-->
+									<li style="background-color: #3F81A5; font-weight: bold;"><a href="#latest">LATEST</a></li>
 								</ul>
 							</nav>
 						</header>
@@ -240,10 +243,22 @@
 
 							<!-- Drink More Water -->
 							<article id="drinkmorewater">
-								<h2 class="major">Drink More Water</h2><span class="image main"><img alt="" src=""></span>
-								<p>At Chesapeak, we make an effort to drink more water every day, and you should too.</p>
-								<p>"Drinking more water can be life changing. Everyone should try it." - Joe Flacco</p>
-								<p>"I started drinking more water, and now I feel way better about my health and wellbeing." - Barack Obama</p>
+
+								<div style="overflow: auto; height: 100%; width: 100%;">
+
+									<h2 class="major">Drink More Water</h2><span class="image main"><img alt="" src=""></span>
+									<p>At Chesapeak, we make an effort to drink more water every day, and you should too.</p>
+									<p>"Drinking more water can be life changing. Everyone should try it." - Joe Flacco</p>
+									<p>"I started drinking more water, and now I feel way better about my health and wellbeing." - Barack Obama</p>
+									<?php
+									for ($i = 0; $i < 50; $i++) {
+										echo $i;
+										echo '<p>-----------------------------------------------------------------------------</p>';			
+									}
+									?>
+
+								</div>
+
 							</article>
 
 							<!-- Latest Release -->
@@ -394,7 +409,7 @@
 			<div class="slide" id="slide5"></div>
 		</div>
 		--> 
-		
+
 	</div>
 
 		<!-- Scripts -->
@@ -402,6 +417,12 @@
 		</script>
 		<script src="style/js/jquery.min.js">
 		</script> 
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js">
+		</script>
+		<script src="style/js/lightgallery.min.js">
+		</script>
+		<script src="style/js/lightgallery-all.js">
+		</script>
 		<script src="style/js/utility.js">
 		</script> 
 		<script src="style/js/browser.min.js">
