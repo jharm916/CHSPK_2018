@@ -229,15 +229,23 @@
 							<!-- CHSPK -->
 							<article id="CHSPK"> <!--overflow, overflow-x, or overflow-y and each can be set to any of visible, hidden, scroll, auto, or inherit.-->
 								<h2 class="major">Chesapeak Music</h2>
+
+								<div id="lightgallery">
+									<a href="images/chspk_popout/DSC2.JPG">
+										<img src="images/chspk_popout/DSC2.JPG" />
+									</a>
+								</div>
+
 								<ul> <!-- style="overflow: scroll; overflow-x: scroll; overflow-y: scroll;"-->
-									<!-- print list item for each image in a folder -->
-									<?php
+									<!--
+									//< ?php
 									$files = glob("images/chspk_popout/*.*");
 									for ($i = 0; $i < count($files); $i++) {
 										$image = $files[$i];
 										echo '<li><img src="images/chspk_popout/' . basename($image) . '" alt="www.chesapeakmusic.com" style="max-width:100%;max-height:100%;"></li>';			
 									}
 									?>
+									-->
 								</ul>
 							</article>
 
@@ -417,11 +425,12 @@
 		</script>
 		<script src="style/js/jquery.min.js">
 		</script> 
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js">
-		</script>
 		<script src="style/js/lightgallery.min.js">
 		</script>
-		<script src="style/js/lightgallery-all.js">
+		<!-- lightgallery plugins -->
+		<script src="style/js/lg-thumbnail.min.js">
+		</script>
+		<script src="style/js/lg-fullscreen.min.js">
 		</script>
 		<script src="style/js/utility.js">
 		</script> 
@@ -433,11 +442,13 @@
 		</script> 
 		<script src="style/js/preloadjs-0.6.2.min.js">
 		</script> 
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js">
+		</script>
 		<!--
 		<script type="text/javascript" src="dist/fullpage.js">
 		</script>
 		--> 
-
+		<!--
 		<script type="text/javascript">
 			var myFullpage = new fullpage('#fullpage', {
 				verticalCentered: true,
@@ -450,9 +461,10 @@
 				}
 			});
 		</script>
-			<script src="http://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript"></script>
-			<script src="style/js/parallax.js" type="text/javascript"></script>
-			<script type="text/javascript">
+		-->
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript"></script>
+		<script src="style/js/parallax.js" type="text/javascript"></script>
+		<script type="text/javascript">
 			$(function(){
 				$(document).ready(function() {
 					var i,
@@ -476,7 +488,7 @@
 						color = 'rgba(' + Math.round(256*Math.random()) + ', ' + Math.round(256*Math.random()) + ', ' + Math.round(256*Math.random()) + ', ' + (Math.round(100*Math.random())/100) + ')';
 						$('#background').append('<div class="star" data-parallaxify-range="' + Math.round(600*Math.random()) + '" style="top: ' + Math.round(height*Math.random()) + 'px; left: ' + Math.round(width*Math.random()) + 'px; width: ' + size + 'px; height: ' + size + 'px; background: ' + color + '; box-shadow: 0px 0px 10px ' + color + ';"></div>');
 					}
-					
+						
 					$.parallaxify({
 						positionProperty: 'transform',
 						responsive: true,
@@ -500,10 +512,13 @@
 					$('#main').slimScroll( {
 						allowPageScroll: true,
 					});
+
+					// enable lightgallery 
+					$("#lightgallery").lightGallery(); 
 					
 				});
 			}); // */
-			
+
 			<!--Display contact email-->
 			function showContactEmail() {
 				var x = document.getElementById("contactEmail");
@@ -511,8 +526,7 @@
 					x.style.display = "block";
 				}
 			}
-			
-			</script>
-
+		
+		</script>
 	</body>
 </html>
