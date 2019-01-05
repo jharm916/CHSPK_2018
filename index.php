@@ -166,6 +166,7 @@
 			 var console = { log: function() {} };
 		</script>
 	<![endif]-->
+
 </head>
 
 <body class="is-preload" style="zoom: 1;">
@@ -217,7 +218,7 @@
 									<li style="background-color: #3F81A5; font-weight: bold;"><a href="#CHSPK">FLICKS</a></li>
 									<li style="background-color: #3F81A5; font-weight: bold;"><a href="#latest">LATEST</a></li>
 								</ul>
-								<ul id="aniimated-thumbnials">
+								<ul id="aniimated-thumbnials" style="overflow: scroll; height: 100%; width: 100%;">
 									<li data-src="images/chspk_popout/DSC2.JPG">
 										<img src="images/litty3.png" />
 									</li>
@@ -251,7 +252,7 @@
 							<!-- Drink More Water -->
 							<article id="drinkmorewater">
 
-								<div style="overflow: auto; height: 100%; width: 100%;">
+								<div>
 
 									<h2 class="major">Drink More Water</h2><span class="image main"><img alt="" src=""></span>
 									<p>At Chesapeak, we make an effort to drink more water every day, and you should too.</p>
@@ -489,8 +490,6 @@
 						width = $(window).width(),
 						height = $(window).height();
 
-					
-
 					export default {
 						name: 'IssueDetail',
 						data() {
@@ -535,10 +534,6 @@
 
 					$('#foreground').click(function() {
 						$('#info').animate({ marginLeft: "-150px" }, 700);
-					});
-					
-					$('#fullpage').fullpage( {
-						scrollOverflow: true
 					});
 					
 					$('#main').slimScroll( {
