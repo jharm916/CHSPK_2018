@@ -215,10 +215,15 @@
 								<ul>
 									<li style="background-color: #3F81A5; font-weight: bold;"><a href="#drinkmorewater">ORDER</a></li>
 									<li style="background-color: #3F81A5; font-weight: bold;"><a href="#CHSPK">FLICKS</a></li>
-									<!--
-									<li style="background-color: #3F81A5; font-weight: bold;"><a href="#contact">Contact</a></li>
-									-->
 									<li style="background-color: #3F81A5; font-weight: bold;"><a href="#latest">LATEST</a></li>
+								</ul>
+								<ul id="aniimated-thumbnials">
+									<li data-src="images/chspk_popout/DSC2.JPG">
+										<img src="images/litty3.png" />
+									</li>
+									<li data-src="images/chspk_popout/DSC2.JPG">
+										<img src="images/chspk_popout/DSC2.JPG" />
+									</li>
 								</ul>
 							</nav>
 						</header>
@@ -229,12 +234,6 @@
 							<!-- CHSPK -->
 							<article id="CHSPK"> <!--overflow, overflow-x, or overflow-y and each can be set to any of visible, hidden, scroll, auto, or inherit.-->
 								<h2 class="major">Chesapeak Music</h2>
-
-								<div id="lightgallery">
-									<a href="images/chspk_popout/DSC2.JPG">
-										<img src="images/chspk_popout/DSC2.JPG" />
-									</a>
-								</div>
 
 								<ul> <!-- style="overflow: scroll; overflow-x: scroll; overflow-y: scroll;"-->
 									<!--
@@ -464,14 +463,47 @@
 		-->
 		<script src="http://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript"></script>
 		<script src="style/js/parallax.js" type="text/javascript"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				// enable lightgallery 
+				$('#aniimated-thumbnials').lightGallery({
+					showThumbByDefault:true,
+					addClass:'showThumbByDefault'
+					//thumbnail:true,
+					//animateThumb: false,
+					//showThumbByDefault: false
+				}); 
+			});
+		</script>
+
 		<script type="text/javascript">
 			$(function(){
 				$(document).ready(function() {
+					import 'style/js/lightgallery.min.js'
+					import 'style/js/lightgallery.min.js/dist/css/lightgallery.css'
+
 					var i,
 						size,
 						color,
 						width = $(window).width(),
 						height = $(window).height();
+
+					
+
+					export default {
+						name: 'IssueDetail',
+						data() {
+							return {
+							imageList: []
+							}
+						},
+						mounted() {
+							const el = document.getElementById('aniimated-thumbnials')
+							window.lightGallery(el)
+						}
+					}
+
 					
 					for (i = 1; i <= 150; i++) {
 						size = Math.ceil(3*Math.random());
@@ -512,9 +544,6 @@
 					$('#main').slimScroll( {
 						allowPageScroll: true,
 					});
-
-					// enable lightgallery 
-					$("#lightgallery").lightGallery(); 
 					
 				});
 			}); // */
